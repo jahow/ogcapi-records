@@ -4,6 +4,12 @@ Facet:
   required:
     - key
   properties:
+    type:
+      type: string
+      enum:
+        - histogram
+        - terms
+        - filters
     key: 
       type: string
       description: Name of the property

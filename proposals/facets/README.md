@@ -159,10 +159,10 @@ computed.
 ```json
 {
   "type": "FeatureCollection",
-  "facets": {
-    "keywords": {
+  "facets": [
+     {
       "type": "terms",
-      "property": "keyword",
+      "key": "keyword",
       "buckets": [
         {
           "value": "Greece",
@@ -173,11 +173,10 @@ computed.
           "count": "150"
         }
       ],
-      "more": 0
-    },
-    "createDate": {
+      "next": 0
+    },{
       "type": "histogram",
-      "property": "createDate",
+      "key": "createDate",
       "buckets": [
         {
           "min": "2010-01-01",
@@ -190,9 +189,9 @@ computed.
           "count": 220
         }
       ],
-      "more": 12
+      "next": 12
     }
-  },
+  ],
   "features": [],
   "numberMatched": 375,
   "numberReturned": 0,
