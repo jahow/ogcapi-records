@@ -1,4 +1,4 @@
-type: object
+type: array
 description: Facets overview
 items:
   $ref: "./facetResult.yaml"
